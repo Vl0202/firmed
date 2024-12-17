@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css'%}">  
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css'%}">
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+<header>
+<nav class="navbar">
+  <div class="container">
+    <a href={% url "clinic:index" %} class="navbar-brand"><img src="{% static 'img/logo.jpg' %}" alt=""></a>
+
+    <div class="navbar-wrap">
+      <ul class="navbar-menu">
+        <li><a href="{% url 'pages:services' %}">Услуги</a></li>
+        <li><a href="{% url 'clinic:doctors' %}">Врачи клиники</a></li>
+        <li><a href="{% url 'pages:about' %}">Контакты</a></li>
+        <li><a href="{% url 'news:news_list' %}">Новости</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=79610544600&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C+" class="num">
+          <ion-icon name="call-sharp"></ion-icon>
+          +7 (961) 054-46-00
+        </a>
+      </li>
+      </ul>
+      {% if user.is_authenticated %}
+      <div class="account">
+      <a href="{% url 'clinic:profile' user.username %}" class="callback">
+        {{ user.username }}
+      </a>
+      <a href="{% url 'logout' %}" class="callback">
+        Выйти
+      </a>
+    </div>
+    {% else %}
+      <div class="account">
+          <a href="{% url 'registration' %}" class="callback">
+            Регистрация
+          </a>
+          <a href="{% url 'login' %}" class="callback">
+            Войти
+          </a>
+        </div>
+    {% endif %}
+
+  </div>
+
+</nav> 
+</header>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

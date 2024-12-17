@@ -1,0 +1,51 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block content %}
+<div class="page">
+  <h1 class="our_contacts">Наши контакты</h1>
+  <div class="container_cont">
+  <div class="phone_banner">
+    <div class="phone">
+      <div class="phone_title">
+        По всем вопросам звоните
+        <br>
+        в регистратуру
+      </div>
+      <div class="phone_number"> +7 (961) 054-46-00 </div>
+    </div>
+  </div>
+
+
+  <div class="grath_work">
+    <div class="work_time">
+      <div class="time_title">
+        <ion-icon name="time-outline" class="clock"></ion-icon>
+        <span>График работы</span>
+      </div>
+      <p>пн-пт 07:30 - 18:00</p>
+      <p>сб 08:00 - 15:00</p>
+      <p>вс - выходной</p>
+    </div>
+  </div>
+  </div>
+  
+  <h2>Где мы находимся </h2>
+  <div class="mesto_clinic">
+    <div class="address">
+      <ion-icon name="pin" class="point"></ion-icon>
+      <p>г. Астрахань, ул. Чугунова, д. 18</p>
+    </div>
+    <div class="video">
+      <video controls width="100%">
+        <source src="{% static 'waytoclinic_fast.mp4' %}" type="video/mp4">
+        <source src="{% static 'waytoclinic_fast.mp4' %}" type="video/webm">
+        Ваш браузер не поддерживает встроенные видео
+      </video>
+    </div>
+
+
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+{% endblock %}

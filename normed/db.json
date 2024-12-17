@@ -1,0 +1,217 @@
+[
+    {
+        "model": "news.category",
+        "pk": 1,
+        "fields": {
+          "created_at": "2022-12-18T23:03:52.159Z",
+          "is_published": true,
+          "title": "День как день",
+          "slug": "routine",
+          "description": "У вас убежало молоко? Вы отразили атаку инопланетян, как и позавчера?\r\nРасскажите, как проходят ваши самые обычные дни."
+        }
+      },
+      {
+        "model": "news.category",
+        "pk": 2,
+        "fields": {
+          "created_at": "2022-12-18T23:04:21.682Z",
+          "is_published": true,
+          "title": "Здоровье",
+          "slug": "health",
+          "description": "Как сохранить физическое здоровье, не растеряв душевного спокойствия? Истории о спорте и ЗОЖ, о болезнях и выздоровлениях — пишите в эту категорию!"
+        }
+      },
+      {
+        "model": "news.category",
+        "pk": 3,
+        "fields": {
+          "created_at": "2022-12-18T23:04:48.750Z",
+          "is_published": true,
+          "title": "Наблюдения",
+          "slug": "details",
+          "description": "Мир полон важными событиями и деталями, о которых не пишут в газетах и не говорят по ТВ. Рассказывайте здесь обо всём, что видите вокруг себя!"
+        }
+      },
+      {
+        "model": "news.new",
+        "pk": 1,
+        "fields": {
+          "created_at": "2022-12-18T23:06:18.993Z",
+          "is_published": true,
+          "title": "Обед",
+          "text": "Обед у В. А. Морозовой. Были Чупров, Соболевский, Бларамберг, Саблин и я.",
+          "pub_date": "1897-02-13T00:00:00Z",
+          "author": 1,
+          "category": 1
+        }
+      },
+      {
+        "model": "news.new",
+        "pk": 2,
+        "fields": {
+          "created_at": "2022-12-18T23:06:18.995Z",
+          "is_published": true,
+          "title": "Блины",
+          "text": "15 февр. Блины у Солдатенкова. Были только я и Гольцев. Много хороших картин, но почти все они дурно повешены. После блинов поехали к Левитану, у которого Солдатенков купил картину и два этюда за 1 100 р. Знакомство с Поленовым. Вечером был у проф. Остроумова; говорит, что Левитану «не миновать смерти». Сам он болен и, по-видимому, трусит.",
+          "pub_date": "1897-02-15T00:00:00Z",
+          "author": 1,
+          "category": 2
+        }
+      },
+      {
+        "model": "news.new",
+        "pk": 3,
+        "fields": {
+          "created_at": "2022-12-18T23:06:18.998Z",
+          "is_published": true,
+          "title": "Собрались в редакции «Русской мысли»",
+          "text": "16 февр. вечером собрались в редакции «Русской мысли», чтобы поговорить о народном театре. Проект Шехтеля всем нравится.",
+          "pub_date": "1897-02-16T00:00:00Z",
+          "author": 1,
+          "category": 3
+        }
+      },
+      {
+        "model": "news.new",
+        "pk": 4,
+        "fields": {
+          "created_at": "2022-12-18T23:06:19.001Z",
+          "is_published": true,
+          "title": "Обед в «Континентале»",
+          "text": "19-го февр. обед в «Континентале» в память великой реформы. Скучно и нелепо. Обедать, пить шампанское, галдеть, говорить речи на тему о народном самосознании, о народной совести, свободе и т. п. в то время, когда кругом стола снуют рабы во фраках, те же крепостные, и на улице, на морозе ждут кучера, — это значит лгать святому духу.",
+          "pub_date": "1897-02-19T00:00:00Z",
+          "author": 1,
+          "category": 3
+        }
+      },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "first_name": "Администратор",
+            "last_name": "",
+            "email": "admin@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-12-14T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "doctor1",
+            "first_name": "Врач1",
+            "last_name": "Лечащий",
+            "email": "doctor1@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-12-15T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "patient1",
+            "first_name": "Пациент1",
+            "last_name": "Беременная",
+            "email": "patient1@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-12-16T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "doctor2",
+            "first_name": "Врач2",
+            "last_name": "Специализированный",
+            "email": "doctor2@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-12-17T00:00:00Z"
+        }
+    },
+    {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "username": "admin",
+        "first_name": "Администратор",
+        "last_name": "",
+        "email": "admin@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-12-14T00:00:00Z"
+    }
+    },
+    {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "username": "doctor1",
+        "first_name": "Врач1",
+        "last_name": "Лечащий",
+        "email": "doctor1@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-15T00:00:00Z"
+    }
+    },
+    {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "username": "patient1",
+        "first_name": "Пациент1",
+        "last_name": "Беременная",
+        "email": "patient1@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-16T00:00:00Z"
+    }
+    },
+    {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "username": "doctor2",
+        "first_name": "Врач2",
+        "last_name": "Специализированный",
+        "email": "doctor2@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-12-17T00:00:00Z"
+    }
+    },
+    {
+      "model": "clinic.doctor",
+      "pk": 1,
+      "fields": {
+          "first_name": "Синчихин",
+          "last_name": "Сергей",
+          "middle_name": "Петрович",
+          "specialty": "Гинеколог",
+          "education": "Высшее",
+          "experience_years": 9,
+          "biography": " доктор медицинских наук, профессор, руководитель клиники. Практическая, научная и педагогическая деятельность в Астраханском ГМУ более 25 лет. Автор более 300 научных публикаций.Гинеколог, репродуктолог, акушер-гинеколог, гинеколог-хирург, гинеколог-эндокринолог. Эксперт лечебно-эстетической гинекологии."
+      }
+      },
+      {
+        "model": "clinic.doctor",
+        "pk": 2,
+        "fields": {
+            "first_name": "Синчихинa",
+            "last_name": "Марина",
+            "middle_name": "Евгеньевна",
+            "specialty": "Врач ультразвуковой диагностики",
+            "education": "Высшее",
+            "experience_years": 54,
+            "biography": "кандидат медицинских наук, врач ультразвуковой диагностики. Специалист высшей квалификационной категории. Владеет всеми видами ультразвуковой диагностики в педиатрии. Многолетняя практическая работа в многопрофильной детской клинической больнице и Перинатальном центре."
+        }
+        }
+]

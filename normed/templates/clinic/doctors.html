@@ -1,0 +1,19 @@
+{% extends "base2.html" %}
+{% block content %}
+{% for doctor in doctor_list %}
+<div class="clinic-doctors">
+    <li >
+      <a href="{% url 'clinic:doctors_detail' doctor.id %}" class="doctor_cart">
+        <div class="doctor">
+          {% if doctor.photo %}
+            <img src="{{ doctor.photo.url }}" alt="">
+          {% endif %}
+          <div class="name">{{doctor.first_name}} {{doctor.last_name}} {{doctor.middle_name}}</div>
+          <div class="exp">Стаж: {{doctor.experience_years}}</div>
+          <div class="educat">Образование: {{doctor.education}}</div>
+        </div>
+      </a>
+    <li>
+  </div>
+  {%endfor%}
+  {%endblock%}

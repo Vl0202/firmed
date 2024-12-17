@@ -1,0 +1,43 @@
+{% extends "base2.html" %}
+{% block content %}
+<div class="container">
+
+    <div class="doctor-info">
+        <div class="left-side">
+            <div class="photo-container">
+                <img src="{{ doctor.photo.url }}" alt="Фото врача">
+            </div>
+        </div>
+
+        <div class="right-side">
+            <h2>{{doctor.first_name}} {{doctor.last_name}} {{doctor.middle_name}}</h2>
+            <div class="item">
+              <ion-icon class="icon" name="calendar-clear-outline"></ion-icon>
+              <p>Стаж: {{doctor.experience_years}}</p>
+            </div>
+            <div class="item">
+              <ion-icon class="icon" name="ribbon-outline"></ion-icon>
+              <p>Образование:{{doctor.education}}</p>
+            </div>
+            <div class="item">
+              <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+              <p>Специализация:{{doctor.specialty}} </p>
+            </div>
+        </div>
+    </div>
+    <h1>О враче:</h1>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="text-content">
+          <p>{{doctor.biography}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
+{% endblock %}

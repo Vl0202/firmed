@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+  {{ new.title }}
+  {{ new.pub_date|date:"d E Y" }}
+{% endblock %}
+{% block content %}
+  <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 40rem;">
+      <div class="card-body">
+        {% if new.image %}
+          <a href="{{ new.image.url }}" target="_blank">
+            <img class="border-3 rounded img-fluid img-thumbnail mb-2 mx-auto d-block" src="{{ new.image.url }}">
+          </a>
+        {% endif %}
+        <h5 class="card-title">{{ new.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          <small>
+            {% if not new.is_published %}
+              <p class="text-danger">Новость снята с публикации админом</p>
+            {% elif not new.category.is_published %}
+              <p class="text-danger">Выбранная категория снята с публикации админом</p>
+            {% endif %}
+            {{ new.pub_date|date:"d E Y, H:i" }} <br>
+            От автора <a class="text-muted" href="{% url 'clinic:profile' new.author.username %}">@{{ new.author.username }}</a> в
+            категории {% include "includes/category_link.html" %}
+          </small>
+        </h6>
+        <p class="card-text">{{ new.text|linebreaksbr }}</p>
+        {% if user == new.author %}
+          <div class="mb-2">
+            <a class="btn btn-sm text-muted" href="{% url 'news:edit_new' new.id %}" role="button">
+              Отредактировать новость
+            </a>
+            <a class="btn btn-sm text-muted" href="{% url 'news:delete_new' new.id %}" role="button">
+              Удалить новость
+            </a>
+          </div>
+        {% endif %}
+        {% include "includes/comments.html" %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

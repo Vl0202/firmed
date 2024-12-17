@@ -1,0 +1,684 @@
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 21px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 32px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+.navbar{
+  width: 100%;
+  height: 120px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .container{
+  height: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .container img{
+  width: 100%;
+  height: 90px;
+  border-radius: 120px;
+}
+
+
+.navbar-menu{
+  list-style-type: none;  
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navbar-menu li{ 
+  display: inline-block;
+}
+.navbar-menu li a{ 
+  display: inline-block;
+  opacity: 0.5;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+.navbar-wrap{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.callback{
+  margin-left: 10px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 7px;
+  background-color: #98f3db;
+  transition: all .5s ease-in-out;
+}
+
+.num {
+  color: #000;
+  transition: none;
+}
+
+
+.account {
+  margin-left: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+.callback:hover {
+  border-bottom-width: 1px;
+  border: #000;
+  background-color: #ffffff;
+  transform: scale(1.4, 1.4);
+}
+
+.navbar-brand{
+  font-weight: 700;
+  font-style: 26px;
+  text-decoration: none;
+  color:aquamarine;
+}
+
+.navbar-menu li a:hover{
+  opacity: 1;
+}
+
+a:visited{
+  color: rgb(28, 31, 207);
+}
+
+.image img{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 17px;
+}
+
+
+.clock {
+  color:#43b9b1
+}
+
+
+
+.container3 {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.doctors-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 49px;
+    color: #6ce4c2;
+}
+
+.container3 img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 180px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.doctors-list li  {
+  display: inline-block;
+  list-style-type: none;  
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+.clinic-services{
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.container4{
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+
+
+
+
+
+.service_container h1, h2, h3, h4 {
+  margin: 40px 45px 30px;
+  line-height: 1.25;
+  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+}
+
+.service_container h3 {
+  font-weight: bold;
+}
+
+
+.service_container h2 {
+  text-align: center;
+}
+
+.service_container .title-service {
+  /* margin: 40px 0px 20px; */
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.service_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 10px;
+  border-bottom: solid;
+  border-bottom-color: #d0c9c9;
+  border-bottom-width: 1px;
+  height: 30px;
+}
+
+
+.title-service {
+  margin: 40px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 53px;
+}
+
+.title-service h4 {
+  margin: 40px 15px 10px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; /* Центрирование по горизонтали */
+  display: block
+}
+
+.price-service {
+  padding: 17px;
+  font-weight: bold;
+}
+
+
+.price-service p {
+  color: #35a5d8;
+  font-size: 20px;
+}
+
+
+
+/* h2 {
+  margin: 40px 10px 20px;
+  line-height: 1.25;
+  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+} */
+
+
+
+
+
+.clinic-doctors {
+  text-align: center;
+  margin: 60px;
+  padding: 0;
+  justify-content: center;
+  display: flex;    
+  flex-flow: row wrap;
+}
+
+.doctor_cart {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.doctor {
+  border: 1px solid transparent;
+  border-radius: 27px;
+  height: 550px;
+  width: 350px;
+  box-shadow: 0 0px 25px rgba(3, 3, 3, 0.197);
+  color: #27538c;
+  margin: 10px;
+}
+
+
+
+
+.clinic-doctors .doctor_cart :hover {
+  box-shadow: 0 0px 20px #60aed8;
+  text-decoration: none;
+}
+
+.clinic-doctors .doctor_cart .doctor  :hover{
+  box-shadow: none;
+}
+
+
+.clinic-doctors .doctor img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0px 15px #ced1d1;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+
+.clinic-doctors .doctor div {
+  text-align: center;
+  margin: 30px;
+  box-shadow: 0 0px 25px #ffffff;
+}
+
+
+
+.clinic-doctors li{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  display: inline;
+}
+
+.clinic-doctors ul {
+  display: inline-block;
+}
+
+
+
+.title_index {
+  font-weight: normal;
+  text-align: center;
+}
+
+.about_us {
+  text-align: center;
+  border: 1px dashed #676767;
+  /* border-radius: 30px; */
+  box-shadow: 0 0px 15px #5e5f63;
+  padding: 30px;
+  margin: 30px auto;
+  background-color: #fcfcce;
+  font-family: '';
+  font-size: 22px;
+  max-width: 800px;
+} 
+
+
+.our_contacts{
+  display: flex;
+  margin-top: 100px;
+  /* margin: 50px; */
+  margin-left: 300px;
+  font-size: 37px;
+  font-weight: normal;
+  font-family: 'PT Sans', sans-serif;
+  color: #319cb6;
+  /* align-items: center;
+  justify-content: center;
+  align-content: center; */
+}
+
+.page_photo{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+.page_photo img {
+  width: 50%;
+  height: 10%;
+  border-radius: 80px;
+  box-shadow: 0 0px 25px rgba(3, 3, 3, 0.197);
+}
+
+.container_cont{
+  display: flex;
+  margin: 80px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.page2{
+  padding: 20px;
+}
+
+video {
+  border: 2px solid #d1d1d1;
+}
+
+
+.clinic_location {
+  box-shadow: 0 0px 15px #ced1d1;
+  border: 2px solid #d1d1d1; /* Рамка вокруг текста */
+
+}
+
+
+
+
+
+.phone_banner {
+  width: 500px;
+  height: 200px;
+  padding: 20px; /* Внутренние отступы */
+  border: 2px solid #d1d1d1; /* Рамка вокруг текста */
+  border-radius: 10px; /* Скругленные углы */
+  background-image: url('contact.jpg');
+  background-size: cover; /* Растянуть картинку на всю область */
+  background-position: center;
+  color: #000;
+  box-shadow: 0 0px 25px rgba(3, 3, 3, 0.197);
+}
+
+.phone_title{
+  margin: 10px;
+}
+
+.phone_number{
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.grath_work {
+  width: 300px;
+  height: 200px;
+  padding: 20px; /* Внутренние отступы */
+  border: 2px solid #ffffff; /* Рамка вокруг текста */
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 0 0px 25px rgba(3, 3, 3, 0.197);
+}
+
+
+.work_time {
+  text-align: center;
+}
+
+.work_time p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.time_title {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 30px; */
+}
+
+.clock{
+  align-items: center;
+  text-align: center;
+  size: 30px;
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+
+
+
+.button-container {
+  display: flex; /* Flexbox для горизонтального расположения */
+  justify-content: center; /* Центрирует кнопки по горизонтали */
+  gap: 20px; /* Расстояние между кнопками */
+  padding: 20px; /* Внешние отступы */
+}
+
+.service2 {
+  display: inline-block;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  width: 150px; /* Фиксированная ширина кнопки */
+}
+
+.service2:hover {
+  border-color: #3e8e41;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3);
+}
+
+.service2 a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-service {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.icon-service img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-service {
+  font-size: 16px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.icon {
+  color: #3099ca;
+}
+
+
+
+.doctor-info {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  background-color: rgba(202, 198, 198, 0.2);
+  height: 350px;
+  align-items: center;
+}
+
+.left-side {
+  width: 50%;
+}
+
+.right-side {
+  width: 50%;
+  margin: 40px 0px 100px;
+  align-items: center;
+}
+
+.right-side p {
+  /* margin-top: 30px; */
+  font-size: 20px;
+  color: #000;
+}
+
+
+.photo-container {
+  width: 250px;
+  height: 300px;
+  border-radius: 17px;
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+.inf {
+  margin-left: 100px;
+}
+
+.outer-container {
+  padding: 30px;
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inner-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.text-content {
+  padding: 40px;
+  line-height: 1.6;
+}
+.container h1{
+  margin-left: 200px;
+  padding: 50px;
+}
+
+.mesto_clinic{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+.address {
+  margin-bottom: 20px;
+  padding: 20px 80px;
+  margin: 0 0px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: baseline;
+  margin-left: 300px;
+}
+
+.point{
+  font-size: 30px;
+  color: red;
+}
+
+
+.page h2 {
+  display: flex;
+  margin-top: 100px;
+  /* margin: 50px; */
+  margin-left: 300px;
+  font-size: 37px;
+  font-weight: normal;
+  font-family: '', sans-serif;
+  color: #32b9c3;
+}
+
+.address p {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.video {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.video video {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 250px;
+}
